@@ -47,6 +47,8 @@ void dijkstra()
 
 		int u = p.second;
 		int dist = p.first;
+
+		if(dist > d[u])continue; 
 		
 		for(pair<int,int> x : graph[u])
 		{
